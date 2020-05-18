@@ -38,4 +38,12 @@ class Driver
         end
     end
 
+    # def self.mileage_cap(distance)
+    #     Ride.all.select do |ride|
+    #        if ride.distance > distance
+    #         ride.driver
+    #        end
+    #     end
+    # end
+
 end
