@@ -32,6 +32,26 @@ trip1 = Trip.new(listing2, guest3)
 trip2 = Trip.new(listing4, guest3)
 trip3 = Trip.new(listing4, guest2)
 
+#instances/method tests for Bakery:
+
+bakery1 = Bakery.new("Holesome Treats")
+bakery2 = Bakery.new("Floury")
+bakery3 = Bakery.new("Yummies")
+
+cookie = Dessert.new("cookie", bakery1, 400)
+cake = Dessert.new("cake", bakery2, 300)
+pie = Dessert.new("pie", bakery3, 250)
+macaron = Dessert.new("macaron", bakery1, 100)
+bread = Dessert.new("bread", bakery2, 400)
+
+
+ingredient1 = Ingredient.new("chocolate chips", cookie)
+ingredient2 = Ingredient.new("baking powder", cookie)
+ingredient3 = Ingredient.new("chocolate", cake)
+ingredient4 = Ingredient.new("flour", cake)
+ingredient5 = Ingredient.new("apples", pie)
+ingredient6 = Ingredient.new("almonds", macaron)
+ingredient7 = Ingredient.new("seeds", bread)
 
 binding.pry
 0 #so not last line
