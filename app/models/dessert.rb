@@ -1,13 +1,12 @@
 class Dessert
     attr_reader :name
-    attr_accessor :bakery, :calories
+    attr_accessor :bakery
 
     @@all = []
 
-    def initialize(name, bakery, calories)
+    def initialize(name, bakery)
         @name = name
         @bakery = bakery
-        @calories = calories
         Dessert.all << self
     end
 
@@ -20,6 +19,14 @@ class Dessert
         Ingredient.all.select do |ingredient|
             ingredient.dessert == self
         end
+    end
+
+    def calories
+        calories = 0
+        ingredients.each do |ingredient|
+            calories += ingredient.calories
+        end
+        calories
     end
 
 

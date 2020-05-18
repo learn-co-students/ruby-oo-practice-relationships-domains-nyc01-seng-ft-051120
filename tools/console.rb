@@ -38,20 +38,48 @@ bakery1 = Bakery.new("Holesome Treats")
 bakery2 = Bakery.new("Floury")
 bakery3 = Bakery.new("Yummies")
 
-cookie = Dessert.new("cookie", bakery1, 400)
-cake = Dessert.new("cake", bakery2, 300)
-pie = Dessert.new("pie", bakery3, 250)
-macaron = Dessert.new("macaron", bakery1, 100)
-bread = Dessert.new("bread", bakery2, 400)
+cookie = Dessert.new("cookie", bakery1)
+cake = Dessert.new("cake", bakery2)
+pie = Dessert.new("pie", bakery3)
+macaron = Dessert.new("macaron", bakery1)
+bread = Dessert.new("bread", bakery2)
 
 
-ingredient1 = Ingredient.new("chocolate chips", cookie)
-ingredient2 = Ingredient.new("baking powder", cookie)
-ingredient3 = Ingredient.new("chocolate", cake)
-ingredient4 = Ingredient.new("flour", cake)
-ingredient5 = Ingredient.new("apples", pie)
-ingredient6 = Ingredient.new("almonds", macaron)
-ingredient7 = Ingredient.new("seeds", bread)
+ingredient1 = Ingredient.new("chocolate chips", cookie, 250)
+ingredient2 = Ingredient.new("baking powder", cookie, 10)
+ingredient3 = Ingredient.new("chocolate", cake, 200)
+ingredient4 = Ingredient.new("flour", cake, 39)
+ingredient5 = Ingredient.new("apples", pie, 89)
+ingredient6 = Ingredient.new("almonds", macaron, 57)
+ingredient7 = Ingredient.new("seeds", bread, 350)
+
+#instances/method tests for Bakery:
+
+actor1 = Actor.new("Emma Watson")
+actor2 = Actor.new("Zendaya")
+actor3 = Actor.new("Harry")
+
+princess = Character.new(actor1, "princess")
+sister = Character.new(actor1, "sister")
+trapeze = Character.new(actor2, "trapeze")
+clown = Character.new(actor3, "clown")
+
+happyshow  = Show.new("Happy")
+friends = Show.new("Friends")
+
+
+happymovie  = Movie.new("Happy")
+happymovie2  = Movie.new("Happy")
+great = Movie.new("Great")
+
+happyclown = MovieRole.new(clown, happymovie)
+happysister = MovieRole.new(sister, happymovie)
+happyprincess = MovieRole.new(princess, happymovie2)
+
+trapezehappy = ShowRole.new(trapeze, happymovie)
+lala = ShowRole.new(princess, friends)
+
+
 
 binding.pry
 0 #so not last line

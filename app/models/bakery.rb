@@ -22,7 +22,7 @@ class Bakery
     def average_calories
         total_calories = 0
             desserts.each do |dessert|
-                total_calories += dessert.calories
+                total_calories += dessert.calories.to_f
             end
         average_calories = total_calories / desserts.count
         average_calories
