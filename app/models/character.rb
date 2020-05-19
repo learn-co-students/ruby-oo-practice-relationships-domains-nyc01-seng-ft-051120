@@ -15,15 +15,23 @@ class Character
     end
 
     def shows
-        ShowRole.all.map do |role|
-            role.show
+        shows = []
+        ShowRole.all.each do |role|
+            if role.character == self
+            shows << role.show
+            end
         end
+        shows
     end
 
     def movies
-        MovieRole.all.map do |role|
-            role.movie
+        movies = []
+        MovieRole.all.each do |role|
+            if role.character == self
+            movies << role.movie
+            end    
         end
+        movies
     end
 
     def total_count

@@ -75,11 +75,26 @@ great = Movie.new("Great")
 happyclown = MovieRole.new(clown, happymovie)
 happysister = MovieRole.new(sister, happymovie)
 happyprincess = MovieRole.new(princess, happymovie2)
+happysis = MovieRole.new(sister, happymovie2)
 
 trapezehappy = ShowRole.new(trapeze, happymovie)
 lala = ShowRole.new(princess, friends)
 
+####CROWDFUNDING#####
+casey = User.new("Casey")
+anton = User.new("Anton")
+brad = User.new("Brad")
+anitha = User.new("Anitha")
 
+food_bank = Project.new("Food Bank", 5000, anton)
+children = Project.new("Children", 1000, anton)
+school = Project.new("School", 500, casey)
+hospital = Project.new("Hospital", 10000, brad)
+
+pledge1 = Pledge.new(food_bank, brad, 100)
+pledge2 = Pledge.new(food_bank, anitha, 200)
+pledge3 = Pledge.new(school, casey, 300)
+pledge4 = Pledge.new(hospital, brad, 800)
 
 binding.pry
 0 #so not last line
