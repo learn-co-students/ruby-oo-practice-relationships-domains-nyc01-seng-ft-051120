@@ -53,7 +53,7 @@ ingredient5 = Ingredient.new("apples", pie, 89)
 ingredient6 = Ingredient.new("almonds", macaron, 57)
 ingredient7 = Ingredient.new("seeds", bread, 350)
 
-#instances/method tests for Bakery:
+#instances/method tests for IMDB:
 
 actor1 = Actor.new("Emma Watson")
 actor2 = Actor.new("Zendaya")
@@ -92,9 +92,11 @@ school = Project.new("School", 500, casey)
 hospital = Project.new("Hospital", 10000, brad)
 
 pledge1 = Pledge.new(food_bank, brad, 100)
-pledge2 = Pledge.new(food_bank, anitha, 200)
-pledge3 = Pledge.new(school, casey, 300)
+pledge2 = Pledge.new(food_bank, anitha, 6000)
+pledge3 = Pledge.new(school, casey, 500)
 pledge4 = Pledge.new(hospital, brad, 800)
+pledge5 = Pledge.new(hospital, brad, 100)
+
 
 binding.pry
 0 #so not last line
