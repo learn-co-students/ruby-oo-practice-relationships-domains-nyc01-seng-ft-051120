@@ -16,7 +16,7 @@ Where would the foreign keys live? Then *build out methods reflecting all these
 relationships.* What method can I call on a user to find other users who have
 backed his/her projects, etc?
 
-#### User
+#### User √
 
 - .highest_pledge
   - returns the user who has made the highest pledge
@@ -25,7 +25,7 @@ backed his/her projects, etc?
 - .project_creator
   - returns all users who have created a project
 
-#### Project
+#### Project √
 
 - .no_pledges
   - returns all projects which have no pledges yet
@@ -34,7 +34,7 @@ backed his/her projects, etc?
 - .most_backers
   - returns the project with the highest number of backers
 
-#### Pledge
+#### Pledge √
 
 - #project
   - returns the project associated with a particular pledge
