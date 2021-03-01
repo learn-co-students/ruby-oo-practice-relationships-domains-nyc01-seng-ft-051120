@@ -21,15 +21,15 @@ etc?
 
 #### Client
 
-- #assign_trainer
+x- #assign_trainer
   - should take a trainer as argument and assign it to the client
 
 #### Location
 
-- .least_clients
+x- .least_clients
   - should find which location has the least clients training there. we need to increase the marketing spend for that location!
 
 #### Trainer
 
-- .most_clients
+x - .most_clients
   - should find which trainer has the most clients. give that trainer a bonus!
